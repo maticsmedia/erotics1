@@ -1,0 +1,300 @@
+/* General styling for both light and dark modes */
+body {
+    font-family: Kanit;
+    color: #333; /* Light mode text color */
+    margin: 0;
+    background-color: #fff; /* Light mode background color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+}
+
+.dark-mode .container,
+.dark-mode .menu-container,
+.dark-mode .menu-item {
+    background-color: #121212; /* Dark mode container, menu, and menu item background color */
+    color: #fff; /* Dark mode container, menu, and menu item text color */
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ... (other styles remain the same) */
+
+/* Additional styling for both light and dark modes */
+footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    bottom: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.vip-badge {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background-color: #f19537; /* Set your desired background color */
+    color: #000; /* Set your desired text color */
+    padding: 5px; /* Adjust padding as needed */
+    border-radius: 5px; /* Adjust as needed */
+    font-weight: bold;
+    font-size: 14px; /* Adjust as needed */
+}
+
+.profile {
+    width: 48%;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+}
+
+.profile-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.profile-info p:first-child {
+    font-weight: bold; /* Make the name title bold */
+    font-size: 1.2em; /* Increase font size */
+    color: #f19537;
+        margin-top: 6px;
+
+}
+p:hover {
+    text-decoration: underline;
+  }
+
+.view-button:hover {
+    background-color: #2980b9;
+}
+
+.profile-image-container {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-container {
+    width: 48%;
+}
+
+
+.location-badge {
+    color: #969696; /* Set the text color to a specific color, e.g., blue */
+    font-size: 16px; /* Set the font size */
+    margin-top: 50px; /* Adjust the top margin as needed */
+}
+.location-badge i {
+    margin-bottom: 20px; /* Adjust the top margin as needed */
+
+}
+/* Additional styling for the filter and content heading */
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.filter-words {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-word {
+    padding: 8px;
+    border-radius: 5px;
+    color: #969696;
+    border: 1px solid #969696; /* Add border */
+}
+
+/* Styling for each individual filter word */
+.filter-word.top-view {
+    color: #fff;
+    opacity: 0.5;
+
+    border-color: #787878; /* Set border color for Top View */
+}
+
+.filter-word.top-trending {
+    color: #fff;
+    opacity: 0.5;
+
+    border-color: #787878; /* Set border color for Top Trending */
+}
+
+.filter-word.most-popular {
+    color: #fff;
+    opacity: 0.5;
+
+    border-color: #787878; /* Set border color for Most Popular */
+}
+
+/* Hover styles for all filter words */
+.filter-word:hover {
+    background-color: #787878;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #787878;
+  }
+  
+  .pagination a.active {
+    background-color: #ff9000;
+    color: white;
+    border: 1px solid #787878;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ff9000;}
+.subheading {
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove margin */
+    padding: 10px 0; /* Add padding as needed */
+}
+
+footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    bottom: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+.subheading h2 {
+    font-size: 1.3em; /* Set the font size */
+    margin: 0; /* Remove margin */
+}
+
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.hamburger-icon span {
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.dark-mode-icon {
+    cursor: pointer;
+}
+
+.menu-container {
+    position: fixed;
+    width: 100%;
+    background-color: #121212;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.menu-item {
+    color: #fff;
+    font-size:23px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    /* Increase font weight and type */
+    font-weight: bold;
+    font-family: Ubuntu;
+}
+
+.menu-item:hover {
+    background-color: #555;
+}
+
+.show-menu {
+    transform: translateX(0);
+}
+
+
+/* Styles for screens smaller than 600 pixels (typical for mobile devices) */
+@media only screen and (max-width: 600px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
+/* Styles for screens 601 pixels and wider (typical for laptops and desktops) */
+@media only screen and (min-width: 601px) {
+    .mobile-only {
+        display: none;
+    }
+}
